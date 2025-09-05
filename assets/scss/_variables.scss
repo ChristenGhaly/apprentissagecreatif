@@ -1,0 +1,39 @@
+// fonts
+$header-font: 'Zapfino', sans-serif;
+$handlee-font: 'Handlee', cursive;
+$body-font: 'Roboto', sans-serif;
+
+// font-sizes
+$nav-textsize: 1.5rem;
+
+// colors
+$menu-color: #3076aa;
+$main-color: #8AA624;
+$light-textcolor: #F4FAFF;
+$dark-textcolor: #08090b;
+$footer-color: $menu-color;
+$hover-color: #BBDCE5;
+$red-color: #9A3F3F;
+$btn-color: #ffdb3c;
+
+// images
+$main-bannerimg: url("../img/main-banner.webp");
+$logo-img: url("../img/logo.png");
+
+// background style
+@mixin bg-img-style($img-name){
+    background-image: $img-name;
+    background-size: cover;
+    background-position: left;
+}
+
+// animations
+$right-to-left-text: moveText 30s linear infinite;
+@keyframes moveText {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -90%;
+    }
+}

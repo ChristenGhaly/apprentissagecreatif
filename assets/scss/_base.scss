@@ -1,0 +1,54 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body{
+    font-family: $body-font;
+    color: $dark-textcolor;
+}
+
+section{
+    padding: 150px;
+}
+
+a{
+    text-decoration: none;
+    color: $light-textcolor;
+    text-decoration: underline;
+    font-family: $body-font;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+    &:hover{
+        color: $hover-color;
+    }
+}
+
+img{
+    margin: auto;
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+h1{
+    font-family: $header-font;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: $handlee-font;
+}
