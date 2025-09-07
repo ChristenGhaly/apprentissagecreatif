@@ -1,7 +1,7 @@
 @import "variables";
 
 .animated-text{
-    overflow-x: hidden;
+    overflow: hidden;
     white-space: nowrap;
     position: relative;
     background-color: $main-color;
@@ -20,6 +20,10 @@
 .nav-menu{
     background-color: $menu-color;
     font-size: $nav-textsize;
+
+    .container{
+        max-width: 90%;
+    }
 
     .nav-link{
         color: $light-textcolor;

@@ -1,1 +1,106 @@
 @import "variables";
+
+.about{
+    .about-img{
+        img{
+            margin-left: 0;
+            height: 500px;
+            width: auto;
+            border-radius: 2rem;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        &:nth-child(even){
+            img{
+                margin-left: 3.8rem;
+                margin-right: 0;
+            }
+        }
+    }
+    
+    h2{
+        margin: 2rem 0;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: $main-color;
+    }
+
+    p{
+        font-size: 1.5rem;
+        line-height: 1.6;
+        color: $dark-textcolor;
+    }
+}
+
+.futur-publication{
+    background-color: #e3e4de;
+
+    .all-publication{
+        position: relative;
+
+        .slick-arrow{
+            position: absolute;
+            top: 45%;
+            right: 105%;
+            height: 50px;
+            width: 50px;
+            border: 0.2rem solid $menu-color;
+            border-radius: 50px;
+            background-image: url("/assets/img/arrow.svg");
+            background-position: center;
+            background-size: cover;
+            color: transparent;
+            font-size: 0;
+        }
+
+        .slick-next{
+            left: 105%;
+            transform: rotate(180deg);
+        }
+
+        .slick-dots{
+            position: absolute;
+            top: 105%;
+            left: 50%;
+            transform: translateX(-50%);
+            list-style: none;
+            display: flex;
+            gap: 10px;
+
+            button{
+                all: unset;
+                height: 1rem;
+                width: 1rem;
+                background-color: $menu-color;
+                border-radius: 10px;
+                box-shadow: 1px 1px 2px #999;
+                font-size: 0;
+                cursor: pointer;
+            }
+        }
+
+        .publication{
+            margin: 0 5rem;
+            padding: 3rem;
+            height: 350px;
+            border: 0.2rem solid $menu-color;
+            border-radius: 2rem;
+            background-color: $main-color;
+            color: $light-textcolor;
+            text-align: center;
+            
+            i{
+                display: inline;
+                font-size: 4rem;
+                color: #556B2F;
+            }
+            
+            h3{
+                margin-top: 2rem;
+                text-shadow: 0 0 10px #333;
+                font-size: 4rem;
+                font-weight: 700;
+            }
+        }
+    }
+}

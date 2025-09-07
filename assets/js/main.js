@@ -1,5 +1,5 @@
 import { loadPartial } from './loadpartials.js';
-import { setupShoppingCart } from './shopingcart.js';
+// import { setupShoppingCart } from './shopingcart.js';
 
 // Loading the header
 //     fetch("partials/header.html")
@@ -21,5 +21,44 @@ document.addEventListener('DOMContentLoaded', async () => {
         loadPartial('partials/footer.html', 'footer')
     ]);
 
-    setupShoppingCart();
+    // setupShoppingCart();
+    AOS.init({
+        once: false,
+        easing: 'ease',
+        offset: 20,
+        duration: 1000
+    });
 });
+
+$('.all-publication').slick({
+        dots: true,
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    centerPadding: '40px',
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerPadding: '40px',
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
