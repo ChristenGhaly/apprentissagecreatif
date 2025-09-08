@@ -292,9 +292,7 @@ p {
 .futur-publication .all-publication .slick-dots {
   position: absolute;
   top: 105%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: 42%;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
