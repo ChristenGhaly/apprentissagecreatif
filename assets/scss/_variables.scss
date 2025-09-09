@@ -15,6 +15,8 @@ $footer-color: $menu-color;
 $hover-color: #BBDCE5;
 $red-color: #9A3F3F;
 $btn-color: #ffdb3c;
+$section-bg-color: #e3e4de;
+$book-bg-color: #f6a69b;
 
 // images
 $main-bannerimg: url("../img/main-banner.webp");
@@ -35,5 +37,28 @@ $right-to-left-text: moveText 30s linear infinite;
     }
     100% {
         left: -90%;
+    }
+}
+
+// Screen Sizes
+$phone-size: 480px;
+$small-size: 576px;
+$medium-size: 768px;
+$large-size: 992px;
+
+@mixin order-btn-style{
+    margin-top: 3rem;
+    padding: 0.5rem 3rem;
+    border: 0.2rem solid $light-textcolor;
+    border-radius: 3rem;
+    background-color: $red-color;
+    color: $light-textcolor;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    &:hover{
+        border: 0.2rem solid $red-color;
+        background-color: $light-textcolor;
+        color: $red-color;
     }
 }

@@ -1,4 +1,5 @@
 import { loadPartial } from './loadpartials.js';
+import { showNavbar } from './navbar.js';
 // import { setupShoppingCart } from './shopingcart.js';
 
 // Loading the header
@@ -17,10 +18,11 @@ import { loadPartial } from './loadpartials.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     await Promise.all([
-        loadPartial('partials/header.html', 'header'),
-        loadPartial('partials/footer.html', 'footer')
+        loadPartial('../partials/header.html', 'header'),
+        loadPartial('../partials/footer.html', 'footer')
     ]);
 
+    showNavbar();
     // setupShoppingCart();
     AOS.init({
         once: false,
@@ -31,34 +33,61 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 $('.all-publication').slick({
-        dots: true,
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
-            {
-                breakpoint: 1100,
-                settings: {
-                    centerPadding: '40px',
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerPadding: '40px',
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    arrows: false,
-                    slidesToShow: 1
-                }
+    dots: true,
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 1100,
+            settings: {
+                centerPadding: '40px',
             }
-        ]
-    });
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerPadding: '40px',
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                arrows: false,
+            }
+        }
+    ]
+});
+
+$('.laflammedalex-pages').slick({
+    dots: true,
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    responsive: [
+        {
+            breakpoint: 1100,
+            settings: {
+                centerPadding: '40px',
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerPadding: '40px',
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                arrows: false,
+            }
+        }
+    ]
+});

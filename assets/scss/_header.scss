@@ -12,9 +12,19 @@
         font-size: 2rem;
         display: inline-block;
         position: absolute;
+        top: 20%;
         left: 100%;
         animation: $right-to-left-text;
     }
+}
+
+.menu{
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+    z-index: 1000;
+	transition: 2s;  
 }
 
 .nav-menu{
@@ -56,6 +66,7 @@
 
 .main-banner{
     @include bg-img-style($main-bannerimg);
+    margin-top: 164px;
     padding: 30px 0 300px 0;
     border-bottom: 1rem solid $menu-color;
 

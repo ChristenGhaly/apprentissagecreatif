@@ -33,7 +33,18 @@
 }
 
 .futur-publication{
-    background-color: #e3e4de;
+    @include bg-img-style($main-bannerimg);
+    background-color: rgba(225,225,225,80%);
+    background-blend-mode: overlay;
+    // background-color: #e3e4de;
+
+    h3{
+        margin-bottom: 3rem;
+        text-align: center;
+        color: $menu-color;
+        font-size: 5rem;
+        font-weight: 700;
+    }
 
     .all-publication{
         position: relative;
@@ -61,7 +72,7 @@
         .slick-dots{
             position: absolute;
             top: 105%;
-            left: 42%;
+            left: 43%;
             // transform: translateX(-70%);
             list-style: none;
             display: flex;
@@ -85,8 +96,8 @@
             height: 350px;
             border: 0.2rem solid $menu-color;
             border-radius: 2rem;
-            background-color: $main-color;
-            color: $light-textcolor;
+            background-color: $light-textcolor;
+            color: $main-color;
             text-align: center;
             
             i{
@@ -95,12 +106,32 @@
                 color: #556B2F;
             }
             
-            h3{
+            h4{
                 margin-top: 2rem;
-                text-shadow: 0 0 10px #333;
-                font-size: 4rem;
+                text-shadow: 0 0 10px #fff;
+                font-size: 3rem;
                 font-weight: 700;
             }
         }
     }
+
+    .order-now-btn{
+        margin-top: 7rem;
+        a{
+            padding: 1rem 3rem;
+            border: 0.2rem solid $light-textcolor;
+            border-radius: 3rem;
+            background-color: $red-color;
+            color: $light-textcolor;
+            font-size: 1.5rem;
+            cursor: pointer;
+
+            &:hover{
+                border: 0.2rem solid $red-color;
+                background-color: $light-textcolor;
+                color: $red-color;
+            }
+        }
+    }
+        
 }
