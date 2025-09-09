@@ -66,21 +66,21 @@
 
 .main-banner{
     @include bg-img-style($main-bannerimg);
-    margin-top: 164px;
+    margin-top: 155px;
     padding: 30px 0 300px 0;
     border-bottom: 1rem solid $menu-color;
 
     .banner-logo{
         img{
             width: 300px;
-            height: 300px;
+            height: auto;
         }
     }
 
     .banner-text{ 
         h1{
-            font-size: clamp(1.8rem, 4vw, 3.5rem);
-            line-height: 5.5;
+            // font-size: clamp(1.8rem, 4vw, 3.5rem);
+            line-height: 4;
             text-shadow: 0 2px 6px rgba(0,0,0,0.35);
             overflow: visible;
             word-break: break-word;
