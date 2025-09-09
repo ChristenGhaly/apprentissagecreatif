@@ -37,7 +37,7 @@
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -314,7 +314,7 @@ p {
 .futur-publication .all-publication .slick-dots {
   position: absolute;
   top: 105%;
-  left: 43%;
+  left: 41%;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,12 +357,14 @@ p {
   margin-top: 7rem;
 }
 .futur-publication .order-now-btn a {
+  text-decoration: none;
   padding: 1rem 3rem;
   border: 0.2rem solid #F4FAFF;
   border-radius: 3rem;
   background-color: #9A3F3F;
   color: #F4FAFF;
   font-size: 1.5rem;
+  text-transform: capitalize;
   cursor: pointer;
 }
 .futur-publication .order-now-btn a:hover {

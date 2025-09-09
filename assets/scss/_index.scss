@@ -72,7 +72,7 @@
         .slick-dots{
             position: absolute;
             top: 105%;
-            left: 43%;
+            left: 41%;
             // transform: translateX(-70%);
             list-style: none;
             display: flex;
@@ -118,12 +118,15 @@
     .order-now-btn{
         margin-top: 7rem;
         a{
+            text-decoration: none;
             padding: 1rem 3rem;
             border: 0.2rem solid $light-textcolor;
             border-radius: 3rem;
             background-color: $red-color;
             color: $light-textcolor;
             font-size: 1.5rem;
+            text-transform: capitalize;
+            
             cursor: pointer;
 
             &:hover{
