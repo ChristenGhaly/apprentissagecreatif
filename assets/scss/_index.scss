@@ -4,32 +4,22 @@
     .about-img{
         img{
             margin-left: 0;
-            height: 500px;
-            width: auto;
+            height: auto;
+            width: 400px;
             border-radius: 2rem;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
         }
 
-        &:nth-child(even){
-            img{
-                margin-left: 3.8rem;
-                margin-right: 0;
-            }
-        }
     }
     
-    h2{
-        margin: 2rem 0;
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: $main-color;
-    }
-
-    p{
-        font-size: 1.5rem;
-        line-height: 1.6;
-        color: $dark-textcolor;
-    }
+    .about-text{
+        p{
+            &:nth-child(even){
+                margin-right: 3.8rem;
+            }
+            
+        }
+    }    
 }
 
 .futur-publication{
@@ -38,21 +28,13 @@
     background-blend-mode: overlay;
     // background-color: #e3e4de;
 
-    h3{
-        margin-bottom: 3rem;
-        text-align: center;
-        color: $menu-color;
-        font-size: 5rem;
-        font-weight: 700;
-    }
-
     .all-publication{
         position: relative;
 
         .slick-arrow{
             position: absolute;
-            top: 45%;
-            right: 105%;
+            top: 40%;
+            right: 90%;
             height: 50px;
             width: 50px;
             border: 0.2rem solid $menu-color;
@@ -65,13 +47,13 @@
         }
 
         .slick-next{
-            left: 105%;
+            left: 90%;
             transform: rotate(180deg);
         }
 
         .slick-dots{
             position: absolute;
-            top: 105%;
+            top: 110%;
             left: 41%;
             // transform: translateX(-70%);
             list-style: none;
@@ -93,7 +75,7 @@
         .publication{
             margin: 0 5rem;
             padding: 3rem;
-            height: 350px;
+            height: 250px;
             border: 0.2rem solid $menu-color;
             border-radius: 2rem;
             background-color: $light-textcolor;
@@ -109,7 +91,7 @@
             h4{
                 margin-top: 2rem;
                 text-shadow: 0 0 10px #fff;
-                font-size: 3rem;
+                font-size: 2.5rem;
                 font-weight: 700;
             }
         }
@@ -119,18 +101,17 @@
         margin-top: 7rem;
         a{
             text-decoration: none;
-            padding: 1rem 3rem;
-            border: 0.2rem solid $light-textcolor;
+            padding: 0.5rem 3rem;
+            border: 0.1rem solid $light-textcolor;
             border-radius: 3rem;
             background-color: $red-color;
             color: $light-textcolor;
-            font-size: 1.5rem;
+            font-size: $nav-textsize;
             text-transform: capitalize;
-            
             cursor: pointer;
 
             &:hover{
-                border: 0.2rem solid $red-color;
+                border: 0.1rem solid $red-color;
                 background-color: $light-textcolor;
                 color: $red-color;
             }

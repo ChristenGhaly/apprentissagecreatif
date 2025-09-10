@@ -1,0 +1,12 @@
+@import "variables";
+
+.contact-info{
+    background-color: $section-bg-color;
+
+    .info-flex{
+    }
+    
+    .contact-form{
+        @include form-style;
+    }
+}

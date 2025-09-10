@@ -43,6 +43,8 @@ img{
     max-width: 100%;
     display: block;
     height: auto;
+    pointer-events: none;
+    user-select: none;
 }
 
 h1{
@@ -53,7 +55,22 @@ h2, h3, h4, h5, h6{
     font-family: $handlee-font;
 }
 
+h2{
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $main-color;
+}
+
+h3{
+    margin-bottom: 2rem;
+    text-align: center;
+    color: $menu-color;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
 p{
-    font-size: 1.2rem;
-    line-height: 1.8;
+    font-size: $p-textsize;
+    color: $dark-textcolor;
 }

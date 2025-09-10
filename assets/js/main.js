@@ -1,5 +1,6 @@
 import { loadPartial } from './loadpartials.js';
 import { showNavbar } from './navbar.js';
+import { preventCopyImages } from './protectimages.js';
 // import { setupShoppingCart } from './shopingcart.js';
 
 // Loading the header
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     ]);
 
     showNavbar();
+    preventCopyImages();
     // setupShoppingCart();
     AOS.init({
         once: false,
@@ -90,4 +92,10 @@ $('.laflammedalex-pages').slick({
             }
         }
     ]
+});
+
+$(".flipbook").turn({
+    width: 1000,
+    height: 400,
+    autoCenter: true
 });

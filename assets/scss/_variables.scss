@@ -5,6 +5,7 @@ $body-font: 'Roboto', sans-serif;
 
 // font-sizes
 $nav-textsize: 1.3rem;
+$p-textsize: 1.1rem;
 
 // colors
 $menu-color: #3076aa;
@@ -30,13 +31,54 @@ $logo-img: url("../img/logo.png");
 }
 
 // animations
-$right-to-left-text: moveText 30s linear infinite;
+$right-to-left-text: moveText 15s linear infinite;
 @keyframes moveText {
     0% {
-        left: 100%;
+        // left: 100%;
+        transform: translateX(100%);
     }
     100% {
-        left: -90%;
+        // left: -90%;
+        transform: translateX(-30%);
+    }
+}
+
+@mixin form-style() {
+    padding: 2rem;
+    border: 1rem solid $book-bg-color;
+    background-color: $light-textcolor;
+    
+    div{
+        margin: 2rem 0;
+        
+        label{
+            display: block;
+            margin-bottom: 0.2rem;
+            font-family: $handlee-font;
+            font-size: 1.5rem;
+
+            span{
+                font-family: red;
+                color: $red-color;
+            }
+        }
+
+        input, textarea{
+            width: 100%;
+            font-size: 1.2rem;
+        }
+
+        textarea{
+            resize: vertical;
+            min-height: 150px;
+            max-height: 400px;
+            overflow: auto;
+            box-sizing: border-box;
+        }
+    }
+
+    button{
+        @include order-btn-style;
     }
 }
 
@@ -53,7 +95,7 @@ $large-size: 992px;
     border-radius: 3rem;
     background-color: $red-color;
     color: $light-textcolor;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     cursor: pointer;
 
     &:hover{
