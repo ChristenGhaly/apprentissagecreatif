@@ -45,6 +45,7 @@ $right-to-left-text: moveText 15s linear infinite;
 
 @mixin form-style() {
     padding: 2rem;
+    box-shadow: 0 0 0.5rem $dark-textcolor;
     border: 1rem solid $book-bg-color;
     background-color: $light-textcolor;
     

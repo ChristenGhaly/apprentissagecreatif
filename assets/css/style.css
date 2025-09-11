@@ -159,19 +159,22 @@ p {
   background-size: cover;
   background-position: left;
   margin-top: 85px;
-  padding: 30px 0 300px 0;
+  padding: 30px 0 100px 0;
   border-bottom: 1rem solid #3076aa;
 }
-.main-banner .banner-logo img {
-  width: 300px;
-  height: auto;
-}
-.main-banner .banner-text h1 {
+.main-banner .banner .banner-text h1 {
   line-height: 4;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
   overflow: visible;
   word-break: break-word;
   max-width: 100%;
+}
+.main-banner .banner .banner-logo {
+  margin-left: 70%;
+}
+.main-banner .banner .banner-logo img {
+  width: 250px;
+  height: auto;
 }
 
 @keyframes moveText {
@@ -471,6 +474,8 @@ p {
 }
 .order-request .order-form {
   padding: 2rem;
+  -webkit-box-shadow: 0 0 0.5rem #08090b;
+          box-shadow: 0 0 0.5rem #08090b;
   border: 1rem solid #f6a69b;
   background-color: #F4FAFF;
 }
@@ -604,8 +609,25 @@ p {
 .contact-info {
   background-color: #e3e4de;
 }
+.contact-info .info-flex .info p, .contact-info .info-flex .info a {
+  font-family: "Handlee", cursive;
+  font-weight: 600;
+  color: #9A3F3F;
+}
+.contact-info .info-flex .info a:hover {
+  color: #3076aa;
+}
+.contact-info .info-flex .info i {
+  font-size: 2rem;
+  padding-right: 1.5rem;
+}
+.contact-info .info-flex .info img {
+  padding-bottom: 3rem;
+}
 .contact-info .contact-form {
   padding: 2rem;
+  -webkit-box-shadow: 0 0 0.5rem #08090b;
+          box-shadow: 0 0 0.5rem #08090b;
   border: 1rem solid #f6a69b;
   background-color: #F4FAFF;
 }

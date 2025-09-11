@@ -4,9 +4,33 @@
     background-color: $section-bg-color;
 
     .info-flex{
+        .info{
+            p, a {
+                font-family: $handlee-font;
+                font-weight: 600;
+                color: $red-color;
+
+                
+            }
+
+            a:hover{
+                color: $menu-color;
+            }
+
+            i{
+                font-size: 2rem;
+                padding-right: 1.5rem;
+
+            }
+
+            img{
+                padding-bottom: 3rem;
+            }
+        }
+        
     }
     
     .contact-form{
-        @include form-style;
+        @include form-style;                
     }
 }
