@@ -1,25 +1,57 @@
 @import "variables";
 
-.about{
-    .about-img{
-        img{
-            margin-left: 0;
-            height: auto;
-            width: 400px;
-            border-radius: 2rem;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+.about-sec{
+    // .about-img{
+    //     img{
+    //         margin-left: 0;
+    //         height: auto;
+    //         width: 400px;
+    //         border-radius: 2rem;
+    //         box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    //     }
+
+    // }
+    
+    // .about-text{
+    //     p{
+    //         &:nth-child(even){
+    //             margin-right: 3.8rem;
+    //         }
+            
+    //     }
+    // } 
+    .about{
+        position: relative;
+        margin: 7rem 0;
+        padding: 2rem 3rem;
+        border: 0.3rem solid $main-color;
+        border-radius: 2rem;
+
+        .about-title{
+            position: absolute;
+            bottom: 80%;
+            // border: 0.3rem solid $main-color;
+            background-color: #fff;
+            z-index: 1;
+
+            i{
+                padding-right: 1rem;
+                font-size: 2rem;
+            }
+
+            h2{
+                padding: 0 2rem;
+                line-height: 0.2rem;
+            }
         }
 
+        .about-text{
+            p{
+                z-index: 200;
+            }
+        }
     }
     
-    .about-text{
-        p{
-            &:nth-child(even){
-                margin-right: 3.8rem;
-            }
-            
-        }
-    }    
 }
 
 .futur-publication{
@@ -44,11 +76,16 @@
             background-size: cover;
             color: transparent;
             font-size: 0;
+            cursor: pointer;
         }
 
         .slick-next{
             left: 90%;
             transform: rotate(180deg);
+        }
+
+        .slick-previous{
+            cursor: pointer;
         }
 
         .slick-dots{
