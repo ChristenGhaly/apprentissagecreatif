@@ -1,6 +1,6 @@
 @import "variables";
 
-.about-sec{
+.mission-sec{
     // .about-img{
     //     img{
     //         margin-left: 0;
@@ -20,14 +20,14 @@
             
     //     }
     // } 
-    .about{
+    .mission{
         position: relative;
         margin: 7rem 0;
         padding: 2rem 3rem;
         border: 0.3rem solid $main-color;
-        border-radius: 2rem;
+        border-radius: 1rem;
 
-        .about-title{
+        .mission-title{
             position: absolute;
             bottom: 80%;
             // border: 0.3rem solid $main-color;
@@ -45,9 +45,12 @@
             }
         }
 
-        .about-text{
+        .mission-text{
+            position: relative; /* make z-index work */
+            z-index: 2;
             p{
-                z-index: 200;
+                z-index: 2;
+                color: inherit;
             }
         }
     }
@@ -136,22 +139,10 @@
 
     .order-now-btn{
         margin-top: 7rem;
-        a{
-            text-decoration: none;
-            padding: 0.5rem 3rem;
-            border: 0.1rem solid $light-textcolor;
-            border-radius: 3rem;
-            background-color: $red-color;
-            color: $light-textcolor;
-            font-size: $nav-textsize;
-            text-transform: capitalize;
-            cursor: pointer;
+        text-align: center;
 
-            &:hover{
-                border: 0.1rem solid $red-color;
-                background-color: $light-textcolor;
-                color: $red-color;
-            }
+        a{
+            @include a-as-btn-style;
         }
     }
         
