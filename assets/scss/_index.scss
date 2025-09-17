@@ -22,14 +22,14 @@
     // } 
     .mission{
         position: relative;
-        margin: 7rem 0;
+        margin: 5rem 0;
         padding: 2rem 3rem;
         border: 0.3rem solid $main-color;
         border-radius: 1rem;
 
         .mission-title{
             position: absolute;
-            bottom: 80%;
+            bottom: 93%;
             // border: 0.3rem solid $main-color;
             background-color: #fff;
             z-index: 1;
@@ -46,7 +46,7 @@
         }
 
         .mission-text{
-            position: relative; /* make z-index work */
+            position: relative;
             z-index: 2;
             p{
                 z-index: 2;
