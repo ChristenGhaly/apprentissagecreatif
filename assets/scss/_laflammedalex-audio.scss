@@ -1,6 +1,7 @@
 @import "variables";
 
 .audio-sec{
+    
     .book-info{
         .cover-page{
             img{
@@ -52,6 +53,15 @@
         audio::-webkit-media-controls-current-time-display,
         audio::-webkit-media-controls-time-remaining-display {
             color: #fff;
+        }
+    }
+
+    .return-btn{
+        text-align: center;
+        
+        a{
+            @include a-as-btn-style;
+            text-transform: none;
         }
     }
 }

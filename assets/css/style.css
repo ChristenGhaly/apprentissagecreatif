@@ -816,6 +816,27 @@ iframe button:hover {
 .audio-sec .audio audio::-webkit-media-controls-time-remaining-display {
   color: #fff;
 }
+.audio-sec .return-btn {
+  text-align: center;
+}
+.audio-sec .return-btn a {
+  margin-top: 7rem;
+  text-decoration: none;
+  padding: 0.5rem 3rem;
+  border: 0.1rem solid #F4FAFF;
+  border-radius: 3rem;
+  background-color: #9A3F3F;
+  color: #F4FAFF;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-transform: none;
+}
+.audio-sec .return-btn a:hover {
+  border: 0.1rem solid #9A3F3F;
+  background-color: #F4FAFF;
+  color: #9A3F3F;
+}
 
 @keyframes moveText {
   0% {
