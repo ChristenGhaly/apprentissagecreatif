@@ -32,8 +32,9 @@ section{
 .laflammedalex-cover{
     background-color: $book-bg-light-color;
     text-align: center;
-    div{
-        margin-top: 2rem;
+
+    .audio-btn{
+        margin-top: 4rem;
         a{
             @include a-as-btn-style;
         }
@@ -44,8 +45,12 @@ section{
 .book-pages{
     text-align: center;
 
+    .container{
+        max-width: 800px;
+    }
+
     .laflammedalex-pages{
-        border: 0.3rem solid $book-bg-color;
+        border: 0.2rem solid $book-bg-color;
         border-radius: 50px;
         background-color: $book-bg-light-color;
 
@@ -57,7 +62,7 @@ section{
             right: 105%;
             height: 50px;
             width: 50px;
-            border: 0.3rem solid $book-bg-color;
+            border: 0.2rem solid $book-bg-color;
             border-radius: 50px;
             box-shadow: 0 0 1rem #999;
             background-image: url("/assets/img/pink-arrow.svg");
@@ -83,8 +88,8 @@ section{
 
             button{
                 all: unset;
-                height: 1rem;
-                width: 1rem;
+                height: 0.7rem;
+                width: 0.7rem;
                 background-color: $book-bg-color;
                 border-radius: 10px;
                 box-shadow: 1px 1px 2px #999;
@@ -95,8 +100,10 @@ section{
 
         .book-slide{
             margin: 1rem 4rem;
+            margin-top: 3rem;
 
             .page-text{
+                margin-top: 1rem;
                 text-align: center;
 
                 h6{
@@ -108,7 +115,7 @@ section{
     }
 
     .fullscreen-btn{
-        margin-top: 5rem;
+        // margin-top: 1rem;
         button{
             @include order-btn-style;
         }
@@ -128,6 +135,7 @@ section{
     z-index: 1000;
     border: 1px solid white;
 	transition: transform 1s ease-in-out;
+    overflow: hidden;
 
     .close-btn{
         all: unset;
@@ -150,12 +158,19 @@ section{
     }
 
     .flipbook{
-        margin: 50px 0;
+        margin-top: 7%;
+        overflow: hidden;
+
         .hard {
-            background: #c0392b !important;
+            background: $book-bg-color !important;
             color: #fff;
             font-weight: bold;
             border: none; 
+
+            img{
+                height: 100%;
+                width: auto;
+            }
         }
 
         .page {
@@ -194,7 +209,7 @@ section{
 }
 
 .order-request{
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: $section-bg-color;
     .order-form{
         @include form-style;

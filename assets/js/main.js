@@ -68,7 +68,7 @@ $('.all-publication').slick({
 });
 
 $('.laflammedalex-pages').slick({
-    dots: true,
+    dots: false,
     centerMode: true,
     centerPadding: '60px',
     slidesToShow: 1,

@@ -485,10 +485,10 @@ section {
   background-color: #FFF2EF;
   text-align: center;
 }
-.laflammedalex-cover div {
-  margin-top: 2rem;
+.laflammedalex-cover .audio-btn {
+  margin-top: 4rem;
 }
-.laflammedalex-cover div a {
+.laflammedalex-cover .audio-btn a {
   margin-top: 7rem;
   text-decoration: none;
   padding: 0.5rem 3rem;
@@ -500,7 +500,7 @@ section {
   text-transform: capitalize;
   cursor: pointer;
 }
-.laflammedalex-cover div a:hover {
+.laflammedalex-cover .audio-btn a:hover {
   border: 0.1rem solid #9A3F3F;
   background-color: #F4FAFF;
   color: #9A3F3F;
@@ -509,8 +509,11 @@ section {
 .book-pages {
   text-align: center;
 }
+.book-pages .container {
+  max-width: 800px;
+}
 .book-pages .laflammedalex-pages {
-  border: 0.3rem solid #f6a69b;
+  border: 0.2rem solid #f6a69b;
   border-radius: 50px;
   background-color: #FFF2EF;
   position: relative;
@@ -521,7 +524,7 @@ section {
   right: 105%;
   height: 50px;
   width: 50px;
-  border: 0.3rem solid #f6a69b;
+  border: 0.2rem solid #f6a69b;
   border-radius: 50px;
   -webkit-box-shadow: 0 0 1rem #999;
           box-shadow: 0 0 1rem #999;
@@ -550,8 +553,8 @@ section {
 }
 .book-pages .laflammedalex-pages .slick-dots button {
   all: unset;
-  height: 1rem;
-  width: 1rem;
+  height: 0.7rem;
+  width: 0.7rem;
   background-color: #f6a69b;
   border-radius: 10px;
   -webkit-box-shadow: 1px 1px 2px #999;
@@ -561,16 +564,15 @@ section {
 }
 .book-pages .laflammedalex-pages .book-slide {
   margin: 1rem 4rem;
+  margin-top: 3rem;
 }
 .book-pages .laflammedalex-pages .book-slide .page-text {
+  margin-top: 1rem;
   text-align: center;
 }
 .book-pages .laflammedalex-pages .book-slide .page-text h6 {
   font-size: 1.5rem;
   font-weight: 600;
-}
-.book-pages .fullscreen-btn {
-  margin-top: 5rem;
 }
 .book-pages .fullscreen-btn button {
   margin-top: 3rem;
@@ -604,6 +606,7 @@ section {
   transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
   transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  overflow: hidden;
 }
 .book-fullscreen .close-btn {
   all: unset;
@@ -621,13 +624,18 @@ section {
   color: #8E1616;
 }
 .book-fullscreen .flipbook {
-  margin: 50px 0;
+  margin-top: 7%;
+  overflow: hidden;
 }
 .book-fullscreen .flipbook .hard {
-  background: #c0392b !important;
+  background: #f6a69b !important;
   color: #fff;
   font-weight: bold;
   border: none;
+}
+.book-fullscreen .flipbook .hard img {
+  height: 100%;
+  width: auto;
 }
 .book-fullscreen .flipbook .page {
   background: white;
@@ -668,7 +676,7 @@ section {
 }
 
 .order-request {
-  margin-top: 100px;
+  margin-top: 50px;
   background-color: #e3e4de;
 }
 .order-request .order-form {
@@ -794,7 +802,7 @@ iframe button:hover {
   line-height: 1rem;
 }
 .audio-sec .audio {
-  padding: 10rem;
+  margin: 10rem 3rem;
 }
 .audio-sec .audio h3 {
   padding-top: 2rem;
