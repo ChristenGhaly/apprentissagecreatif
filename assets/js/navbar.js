@@ -4,7 +4,7 @@ export function showNavbar() {
     
     window.onscroll = function(){
         if (window.pageYOffset > 100) {
-            menu.style.background = 'black';
+            menu.style.background = '#3076aa';
         } else {
             menu.style.background = 'transparent';
         }

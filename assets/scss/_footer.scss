@@ -30,3 +30,11 @@ footer{
         font-size: 1.8rem;
     }
 }
+
+@media (max-width: $phone-size) {
+    footer{
+        p{
+            font-size: 0.9rem;
+        }
+    }
+}

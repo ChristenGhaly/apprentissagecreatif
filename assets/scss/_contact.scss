@@ -4,13 +4,14 @@
     background-color: $section-bg-color;
 
     .info-flex{
+        display: flex;
+        gap: 3rem;
         .info{
+            width: 40%;
             p, a {
                 font-family: $handlee-font;
                 font-weight: 600;
-                color: $red-color;
-
-                
+                color: $red-color;  
             }
 
             a:hover{
@@ -25,12 +26,90 @@
 
             img{
                 padding-bottom: 3rem;
+                width: 300px;
+                height: auto;
             }
         }
-        
     }
     
     .contact-form{
+        width: 60%;
         @include form-style;                
+    }
+}
+
+@media (max-width: $large-size) {
+    .contact-info{
+
+        .info-flex{
+            gap: 1rem;
+            .info{
+                width: 40%;
+                p, a {
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                }
+
+                a:hover{
+                    color: $menu-color;
+                }
+
+                i{
+                    font-size: 1.1rem;
+                    padding-right: 1rem;
+
+                }
+
+                img{
+                    padding-bottom: 3rem;
+                    width: 300px;
+                    height: auto;
+                }
+            }
+        }
+        
+        .contact-form{
+            width: 60%;               
+        }
+    }
+}
+
+@media (max-width: $medium-size) {
+    .contact-info{
+
+        .info-flex{
+            flex-direction: column-reverse;
+
+            .info{
+                width: 100%;
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                justify-content: center;
+
+                img{
+                    padding-bottom: 3rem;
+                    width: 150px;
+                    height: auto;
+                }
+            }
+        }
+        
+        .contact-form{
+            width: 100%;              
+        }
+    }
+}
+
+@media (max-width: $small-size) {
+    .contact-info{
+
+        .info-flex{
+
+            .info{
+                flex-direction: column;
+                gap: 0;
+            }
+        }
     }
 }

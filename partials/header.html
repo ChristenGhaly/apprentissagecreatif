@@ -1,66 +1,95 @@
 <header>
-    <div class="menu" id="menu">
-        <!-- <div class="animated-text pt-1">
-            <p>Edition apprentissage créatif</p>
-        </div> -->
-
-        <div class="nav-menu">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNavDropdown">
-                            <ul class="navbar-nav col-7 gap-3 align-items-center">
-                                <li>
-                                    <a href="/">
-                                        <img src="/assets/img/logo.webp" alt="Website's logo">
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="/">Accueil</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/apropos.html">À propos</a>
-                                </li>
-                                
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Livres
-                                    </a>
-                                    <ul class="dropdown-menu nav-menu">
-                                        <li><a class="dropdown-item" href="/laflammedalex/">La flamme d'Alex</a></li>
-                                    </ul>
-                                </li>
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link" href="../shop.html">Boutique</a>
-                                </li> -->
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/contact.html">Contact</a>
-                                </li>
-                            </ul>
-
-                            <ul class="navbar-nav d-flex justify-content-between align-items-center gap-5">
-                                <li>
-                                    <a class="nav-link cart-icon" href="#" id="cart-btn">
-                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 512 512" fill="#ffffff"><circle cx="176" cy="416" r="16" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="400" cy="416" r="16" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M48 80h64l48 272h256"/><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 288h249.44a8 8 0 0 0 7.85-6.43l28.8-144a8 8 0 0 0-7.85-9.57H128"/></svg> -->
-                                        
-                                        <!-- <span id="cart-items">0</span> -->
-                                    </a>
-                                </li>
-                                
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fa-solid fa-globe"></i>
-                                    </a>
-                                    <ul class="dropdown-menu nav-menu">
-                                        <li><a class="dropdown-item" href="#">Français</a></li>
-                                        <!-- <li><a class="dropdown-item" href="#">English</a></li> -->
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+    <div class="main-menu">
+        <div class="logo-flex d-flex justify-content-between align-items-center">
+            <div class="left col-8">
+                <ul class="d-flex justify-content-between align-items-center">
+                    <li class="logo-img">
+                        <a href="/">
+                            <img src="/assets/img/logo.webp" alt="Website's logo">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/apropos.html">À propos</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Livres
+                        </a>
+                        <ul class="dropdown-menu nav-menu">
+                            <li><a class="dropdown-item" href="/laflammedalex/">La flamme d'Alex</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
+
+            <div class="burger-btn col-2" id="burger-btn-id">
+                <button><i class="fa-solid fa-bars"></i></button>
+            </div>
+
+            <div class="right col-2">
+                <ul>    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                        <ul class="dropdown-menu nav-menu">
+                            <li><a class="dropdown-item" href="#">Français</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="burger-menu" id="burger-menu-id">
+            <button id="burger-close-btn-id">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+
+            <div class="logo-flex">
+                <div class="logo-img">
+                    <a href="/"><img src="/static/img/header/logo.svg" alt=""></a>
+                </div>
+                <div class="logo-text">
+                    <a href="/">
+                        <p>Edition apprentissage créatif</p>
+                    </a>
+                </div>
+            </div>
+
+            <hr>
+
+            <ul>	
+                <li><a href="/"><i class="fa-solid fa-house-chimney-window"></i><span>Accueil</span></a></li>
+                
+                <li><a href="/apropos.html"><i class="fa-solid fa-address-card"></i><span>À propos</span></a></li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-book-open"></i><span>
+                        Livres
+                    </a>
+                    <ul class="dropdown-menu nav-menu">
+                        <li><a class="dropdown-item" href="/laflammedalex/">La flamme d'Alex</a></li>
+                    </ul>
+                </span></a></li>
+                
+                <li><a href="/contact"><i class="fa-solid fa-phone"></i><span>contact</span></a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-globe"></i><span>Langue</span>
+                    </a>
+                    <ul class="dropdown-menu nav-menu">
+                        <li><a class="dropdown-item" href="#">Français</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -76,39 +105,4 @@
             </div>
         </div>
     </section>
-
-    <!-- <div class="cart-tab" id="cart-tab">
-        <div class="cart-title">
-            <h2>Panier</h2>
-        </div>
-
-        <div class="cart-items">
-            <div class="item">
-                <div class="item-info d-flex justify-content-center align-items-center gap-3">
-                    <div class="item-img col-2">
-                        <img src="assets/img/char2.webp" alt="book #1">
-                    </div>
-
-                    <div class="item-name col-3">
-                        <p>Book #1</p>
-                    </div>
-
-                    <div class="item-quantity col-3 d-flex justify-content-between align-items-center">
-                        <button class="minus"><i class="fa-solid fa-circle-minus"></i></button>
-                        <span>1</span>
-                        <button class="plus"><i class="fa-solid fa-circle-plus"></i></button>
-                    </div>
-
-                    <div class="item-remove col-3 text-center">
-                        <button class="remove-btn"><i class="fa-solid fa-trash-can"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="cart-btns">
-            <button class="close-btn" id="close-btn">Fermer</button>
-            <button class="checkout-btn">Passer à la caisse</button>
-        </div>
-    </div> -->
 </header>

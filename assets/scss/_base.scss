@@ -60,6 +60,11 @@ h2{
     font-size: 2.5rem;
     font-weight: 700;
     color: $main-color;
+
+    @media (max-width: $medium-size){
+		margin-bottom: 1.5rem;
+        font-size: 2.1rem;
+	}
 }
 
 h3{
@@ -68,9 +73,18 @@ h3{
     color: $menu-color;
     font-size: 3rem;
     font-weight: 700;
+
+    @media (max-width: $medium-size){
+		margin-bottom: 1.5rem;
+        font-size: 2.1rem;
+	}
 }
 
 p{
     font-size: $p-textsize;
     color: $dark-textcolor;
+}
+
+@media only screen and (max-width: $medium-size){
+    
 }

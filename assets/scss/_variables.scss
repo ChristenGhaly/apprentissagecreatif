@@ -82,6 +82,23 @@ $right-to-left-text: moveText 15s linear infinite;
     button{
         @include order-btn-style;
     }
+
+    @media (max-width: $large-size){
+		padding: 1.5rem;
+        border: 0.5rem solid $book-bg-color;
+        
+        div{
+            margin: 1.5rem 0;
+            
+            label{
+                font-size: 1.2rem;
+            }
+
+            input, textarea{
+                font-size: 1rem;
+            }
+        }
+	}
 }
 
 // Screen Sizes
@@ -105,6 +122,18 @@ $large-size: 992px;
         background-color: $light-textcolor;
         color: $red-color;
     }
+
+    @media (max-width: $large-size){
+		margin-top: 1rem;
+        padding: 0.4rem 2rem;
+        border: 0.1rem solid $light-textcolor;
+        border-radius: 2rem;
+        font-size: 1rem;
+
+        &:hover{
+            border: 0.1rem solid $red-color;
+        }
+	}
 }
 
 @mixin a-as-btn-style{
@@ -123,5 +152,12 @@ $large-size: 992px;
         border: 0.1rem solid $red-color;
         background-color: $light-textcolor;
         color: $red-color;
+    }
+
+    @media (max-width: $large-size){
+        margin-top: 5rem;
+        padding: 0.4rem 2rem;
+        border-radius: 2rem;
+        font-size: 1rem;
     }
 }

@@ -44,3 +44,122 @@
         }
     }
 }
+
+@media (max-width: $large-size){
+    .about-sec{
+        .slogan{
+            
+            h2{
+                text-shadow: 0 0 0.1rem #777;
+                line-height: 3rem;
+                font-size: 2.5rem;
+            }
+        }
+
+        .about-flex{
+            margin-top: 5rem;
+            .about{
+                padding: 1.5rem;
+
+                h3{
+                    font-size: 1.5rem;
+                }
+
+                .about-text{
+                    p{
+                        font-size: 1.1rem;
+                    }
+
+                    ul{
+                        li{
+                            padding: 0.3rem;
+                        }
+                    }
+
+                    h4{
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $medium-size){
+    .about-sec{
+        .slogan{
+            
+            h2{
+                line-height: 2rem;
+                font-size: 1.8rem;
+            }
+        }
+
+        .about-flex{
+            flex-direction: column;
+            margin-top: 4rem;
+            .about{
+                width: 100%;
+
+                h3{
+                    font-size: 1.3rem;
+                }
+
+                .about-text{
+                    p{
+                        font-size: 1rem;
+                    }
+
+                    ul{
+                        li{
+                            padding: 0.1rem;
+                        }
+                    }
+
+                    h4{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $phone-size){
+    .about-sec{
+        .slogan{
+            
+            h2{
+                line-height: 1.7rem;
+                font-size: 1.3rem;
+            }
+        }
+
+        .about-flex{
+            
+            .about{
+
+                h3{
+                    font-size: 1.1rem;
+                }
+
+                .about-text{
+                    p{
+                        font-size: 16px;
+                    }
+
+                    ul{
+                        li{
+                            padding: 0;
+                        }
+                    }
+
+                    h4{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

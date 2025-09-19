@@ -115,7 +115,7 @@ section{
     }
 
     .fullscreen-btn{
-        // margin-top: 1rem;
+
         button{
             @include order-btn-style;
         }
@@ -142,10 +142,7 @@ section{
         position: absolute;
         top: 2%;
         right: 3%;
-        // margin-left: 100%;
         color: $light-textcolor;
-        // opacity: 100%;
-        // border-radius: 5px;
         cursor: pointer;
         
         i{
@@ -183,7 +180,6 @@ section{
             border: 1px solid rgba(0, 0, 0, 0.11);
 
             img{
-                // width: 70%;
                 object-fit: cover;
                 margin: auto;
             }
@@ -220,45 +216,136 @@ iframe{
     @include form-style;
 }
 
-// #flipbook {
-//     position: relative;
-//     width: 800px;
-//     height: 300px;
-//     margin: 0 auto;
-//     z-index: 1;
+@media (max-width: $large-size){
+    .laflammedalex-description{
+        .description{
 
-//     .protect-img{
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         width: 100%;
-//         height: 100%;
-//         background: transparent;
-//         background: #000;
-//         z-index: 1000;
-//     }
-// }
+            h2{
+                margin-bottom: 1.5rem;
+                font-size: 2.1rem;
+            }
+        }  
+    }
 
-// .flipbook .hard small{
-// 	font-style: italic;
-// 	font-weight: lighter;
-// 	opacity: 0.7;
-// 	font-size: 14px;
-// }
+    .laflammedalex-cover{
+        .audio-btn{
+            margin-top: 3rem;
+            a{
+                font-size: 1rem;
+            }
+        }
+            
+    }
 
-// .flipbook .page small{
-// 	font-size: 14px;
-//     margin-bottom: 10px;
-// }
+    .book-pages{
 
-// #flipbook {
-//   width: 400px;
-//   height: 400px;
-//   margin: 0 auto;
-// }
-// #flipbook .page {
-//     width: 100%;
-//     height: auto;
-//   background: white;
-//   box-shadow: 0 0 10px #ccc;
-// }
+        .container{
+            max-width: 600px;
+        }
+
+        .laflammedalex-pages{
+            border: 0.1rem solid $book-bg-color;
+            border-radius: 30px;
+
+            .slick-arrow{
+                height: 40px;
+                width: 40px;
+                border: 0.1rem solid $book-bg-color;
+            }
+
+            .book-slide{
+                margin: 0.5rem 2.3rem;
+                margin-top: 2rem;
+
+                .page-text{
+                    margin-top: 1rem;
+
+                    h6{
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            #fullscreen-btn{
+                // button{
+                    margin-left: 100%;
+                    display: none;
+                    transform: translateX(100%);
+                // }
+            }
+        }
+    }
+
+    .book-fullscreen{
+        display: none;
+    }
+
+    .order-request{
+        margin-top: 0px;
+        h3{
+            margin-bottom: 1.5rem;
+            font-size: 2.1rem;
+        }
+    }
+}
+
+@media (max-width: $small-size){
+    .laflammedalex-description{
+        .description{
+            border: 0.5rem solid $book-bg-color;
+            h2{
+                margin-bottom: 1rem;
+                font-size: 1.8rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }  
+    }
+
+    .laflammedalex-cover{
+        .cover-flex{
+            flex-direction: column;
+            div{
+                width: 100%;
+                img{
+                    height: 400px;
+                    width: auto;
+                }
+            }
+        }   
+    }
+
+    .book-pages{
+
+        .laflammedalex-pages{
+            border-radius: 10px;
+
+            .book-slide{
+                margin: 0.1rem 0.5rem;
+                margin-top: 1rem;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+
+                .page-text{
+                    margin-top: 0.8rem;
+
+                    h6{
+                        font-size: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .order-request{
+
+        h3{
+            margin-bottom: 1.5rem;
+            font-size: 1.7rem;
+        }
+    }
+}
