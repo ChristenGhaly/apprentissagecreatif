@@ -267,11 +267,11 @@ iframe{
             }
 
             #fullscreen-btn{
-                // button{
-                    margin-left: 100%;
-                    display: none;
-                    transform: translateX(100%);
-                // }
+                button{
+                    // margin-left: 100%;
+                    display: none !important; 
+                    // transform: translateX(100%);
+                }
             }
         }
     }

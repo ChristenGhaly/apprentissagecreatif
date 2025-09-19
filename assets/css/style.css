@@ -209,28 +209,20 @@ header .main-menu .burger-btn button:hover {
 header .main-menu .burger-menu {
   display: none;
   position: fixed;
-  top: 0;
+  top: 5;
   right: 0;
   width: 100vw;
   height: 100vh;
   background-color: #3076aa;
-  opacity: 99%;
+  opacity: 100%;
   padding: 20px 40px;
-  z-index: 9999;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-}
-header .main-menu .burger-menu .open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  z-index: 10000;
+  overflow-y: hidden;
 }
 header .main-menu .burger-menu button {
   all: unset;
-  margin-left: 90%;
+  margin-left: 95%;
+  margin-top: 0;
   opacity: 100%;
   border-radius: 5px;
   cursor: pointer;
@@ -241,6 +233,15 @@ header .main-menu .burger-menu button i {
   background-color: wheat;
   font-size: 2.5rem;
   color: #8E1616;
+}
+header .main-menu .burger-menu .logo-text a {
+  text-decoration: none;
+  font-family: "Zapfino", sans-serif;
+  font-weight: 500;
+}
+header .main-menu .burger-menu .logo-text a p {
+  color: #F4FAFF;
+  font-size: 1.1rem;
 }
 header .main-menu .burger-menu ul {
   margin-top: 30px;
@@ -271,10 +272,6 @@ header .main-menu .burger-menu ul span {
   text-transform: capitalize;
 }
 header .main-menu .burger-menu.active {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-header .main-menu .open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
@@ -1180,11 +1177,8 @@ iframe button:hover {
   .book-pages .laflammedalex-pages .book-slide .page-text h6 {
     font-size: 1rem;
   }
-  .book-pages .laflammedalex-pages #fullscreen-btn {
-    margin-left: 100%;
-    display: none;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+  .book-pages .laflammedalex-pages #fullscreen-btn button {
+    display: none !important;
   }
   .book-fullscreen {
     display: none;

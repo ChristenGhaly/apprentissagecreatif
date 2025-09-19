@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         loadPartial('/partials/footer.html', 'footer')
     ]);
 
-    setupBurgerMenu("burger-btn-id", "burger-menu-id", "burger-close-btn-id");
+    // setupBurgerMenu("burger-btn-id", "burger-menu-id", "burger-close-btn-id");
+    setupBurgerMenu();
     preventCopyImages();
     fullscreenDisplay();
     initFlipbook();

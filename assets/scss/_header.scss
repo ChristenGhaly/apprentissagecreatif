@@ -82,24 +82,22 @@ header{
         .burger-menu{
             display: none;
             position: fixed;
-            top: 0;
+            top: 5;
             right: 0;
             width: 100vw;
             height: 100vh;
             background-color: $menu-color;
-            opacity: 99%;
+            opacity: 100%;
             padding: 20px 40px;
-            z-index: 9999;
-            transform: translateX(100%);
-            transition: transform 0.3s ease-in-out;
-
-            .open {
-                transform: translateX(0);
-            }
+            z-index: 10000;
+            overflow-y: hidden;
+            // transform: translateX(100%);
+            // transition: transform 0.3s ease-in-out;
 
             button{
                 all: unset;
-                margin-left: 90%;
+                margin-left: 95%;
+                margin-top: 0;
                 opacity: 100%;
                 border-radius: 5px;
                 cursor: pointer;
@@ -110,6 +108,19 @@ header{
                     background-color: wheat;
                     font-size: 2.5rem;
                     color: #8E1616;
+                }
+            }
+
+            .logo-text{
+                a{
+                    text-decoration: none;
+                    font-family: $header-font;
+                    font-weight: 500;
+                    
+                    p{
+                        color: $light-textcolor;
+                        font-size: 1.1rem;
+                    }
                 }
             }
 
@@ -152,10 +163,6 @@ header{
             &.active{
                 transform: translateX(0);
             }
-        }
-
-        .open {
-            transform: translateX(0);
         }
     }
 

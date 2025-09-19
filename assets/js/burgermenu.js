@@ -1,19 +1,23 @@
-export function setupBurgerMenu(burger_btn_id, burger_menu_id, burger_close_btn_id){
+export function setupBurgerMenu(){
     const body = document.querySelector("body");
-    const burger_btn = document.getElementById(burger_btn_id);
-    const burger_menu = document.getElementById(burger_menu_id);
-    const burger_close_btn = document.getElementById(burger_close_btn_id);
+    const upper_menu = document.getElementById("upper-menu");
+    const burger_btn = document.getElementById("burger-btn-id");
+    const burger_menu = document.getElementById("burger-menu-id");
+    const burger_close_btn = document.getElementById("burger-close-btn-id");
 
-    if (!burger_btn || !burger_menu || !burger_close_btn) return;
+    if (!burger_btn || !burger_menu || !burger_close_btn || !upper_menu) return;
 
     function openBurgerMenu() {
-        burger_menu.classList.add("open");
+        // burger_menu.classList.add("open");
+        burger_menu.style.display = "block";
+        burger_btn.style.display = "none";
         body.style.overflowY = "hidden";
-        console.log("burger menu clicked");
     }
     
     function closeBurgerMenu() {
-        burger_menu.classList.remove("open");
+        // burger_menu.classList.remove("open");
+        burger_menu.style.display = "none";
+        burger_btn.style.display = "block";
         body.style.overflowY = "visible";
     }
 
