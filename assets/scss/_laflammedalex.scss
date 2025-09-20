@@ -216,6 +216,21 @@ iframe{
     @include form-style;
 }
 
+@media (max-width: 1200px){
+
+    .book-pages{
+        .fullscreen-btn{
+            button{
+                display: none; 
+            }
+        }
+    }
+
+    #book-fullscreen{
+        display: none;
+    }
+}
+
 @media (max-width: $large-size){
     .laflammedalex-description{
         .description{
@@ -265,19 +280,7 @@ iframe{
                     }
                 }
             }
-
-            #fullscreen-btn{
-                button{
-                    // margin-left: 100%;
-                    display: none !important; 
-                    // transform: translateX(100%);
-                }
-            }
         }
-    }
-
-    .book-fullscreen{
-        display: none;
     }
 
     .order-request{

@@ -1,9 +1,12 @@
 @import "variables";
 
 .about-sec{
+    padding-top: 50px;
+
     .slogan{
         text-align: center;
         h2{
+            margin: 1rem 0;
             color: $red-color;
             text-shadow: 0 0 0.2rem #777;
             line-height: 4rem;
@@ -36,6 +39,7 @@
                 }
 
                 h4{
+                    margin: 1.5rem 0 0.2rem 0;
                     font-family: $body-font;
                     font-size: 1.2rem;
                     font-weight: 500;

@@ -222,7 +222,7 @@ header .main-menu .burger-menu {
 header .main-menu .burger-menu button {
   all: unset;
   margin-left: 95%;
-  margin-top: 0;
+  margin-top: -20rem;
   opacity: 100%;
   border-radius: 5px;
   cursor: pointer;
@@ -363,6 +363,19 @@ header .main-banner .banner .banner-logo img {
     font-size: 1.3rem;
     font-weight: 600;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  }
+}
+@media (max-width: 576px) {
+  header .main-banner .banner .banner-text {
+    padding: 200px 0 0 0;
+  }
+  header .main-banner .banner .banner-text h1 {
+    text-align: start;
+    font-weight: 800;
+    text-shadow: 0 0 2rem #000;
+  }
+  header .main-banner .banner .banner-logo {
+    display: none;
   }
 }
 @media (max-width: 480px) {
@@ -637,10 +650,14 @@ header .main-banner .banner .banner-logo img {
             transform: translateX(-30%);
   }
 }
+.about-sec {
+  padding-top: 50px;
+}
 .about-sec .slogan {
   text-align: center;
 }
 .about-sec .slogan h2 {
+  margin: 1rem 0;
   color: #9A3F3F;
   text-shadow: 0 0 0.2rem #777;
   line-height: 4rem;
@@ -667,6 +684,7 @@ header .main-banner .banner .banner-logo img {
   padding: 0.5rem;
 }
 .about-sec .about-flex .about .about-text h4 {
+  margin: 1.5rem 0 0.2rem 0;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
@@ -1144,6 +1162,14 @@ iframe button:hover {
   }
 }
 
+@media (max-width: 1200px) {
+  .book-pages .fullscreen-btn button {
+    display: none;
+  }
+  #book-fullscreen {
+    display: none;
+  }
+}
 @media (max-width: 992px) {
   .laflammedalex-description .description h2 {
     margin-bottom: 1.5rem;
@@ -1176,12 +1202,6 @@ iframe button:hover {
   }
   .book-pages .laflammedalex-pages .book-slide .page-text h6 {
     font-size: 1rem;
-  }
-  .book-pages .laflammedalex-pages #fullscreen-btn button {
-    display: none !important;
-  }
-  .book-fullscreen {
-    display: none;
   }
   .order-request {
     margin-top: 0px;
