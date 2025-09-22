@@ -280,7 +280,7 @@ header .main-banner {
   background-size: cover;
   background-position: left;
   margin-top: 85px;
-  padding: 30px 0 100px 0;
+  padding: 130px 0 200px 0;
   border-bottom: 1rem solid #3076aa;
 }
 header .main-banner .banner .banner-text h1 {
@@ -289,13 +289,7 @@ header .main-banner .banner .banner-text h1 {
   overflow: visible;
   word-break: break-word;
   max-width: 100%;
-}
-header .main-banner .banner .banner-logo {
-  margin-left: 70%;
-}
-header .main-banner .banner .banner-logo img {
-  width: 250px;
-  height: auto;
+  text-align: center;
 }
 
 @media (max-width: 1100px) {
@@ -304,16 +298,12 @@ header .main-banner .banner .banner-logo img {
     font-size: 1.1rem;
   }
   header .main-banner {
-    padding: 30px 0 70px 0;
+    padding: 60px 0 150px 0;
     border-bottom: 0.8rem solid #3076aa;
   }
   header .main-banner .banner .banner-text h1 {
     line-height: 4;
     font-size: 2rem;
-  }
-  header .main-banner .banner .banner-logo img {
-    width: 230px;
-    height: auto;
   }
 }
 @media (max-width: 992px) {
@@ -324,16 +314,13 @@ header .main-banner .banner .banner-logo img {
     width: 60%;
   }
   header .main-banner {
-    padding: 30px 0;
+    padding: 50px 0 120px 0;
     border-bottom: 0.7rem solid #3076aa;
   }
   header .main-banner .banner .banner-text h1 {
     line-height: 4;
     font-size: 1.6rem;
-  }
-  header .main-banner .banner .banner-logo img {
-    width: 200px;
-    height: auto;
+    font-weight: 600;
   }
 }
 @media (max-width: 768px) {
@@ -355,27 +342,26 @@ header .main-banner .banner .banner-logo img {
     display: block;
   }
   header .main-banner {
-    padding: 30px 0;
+    padding: 50px 0 70px 0;
     border-bottom: 0.7rem solid #3076aa;
   }
   header .main-banner .banner .banner-text h1 {
     line-height: 4;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    font-size: 1.2rem;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
   }
 }
 @media (max-width: 576px) {
+  header .main-banner {
+    background-position: center;
+  }
   header .main-banner .banner .banner-text {
-    padding: 200px 0 0 0;
+    padding: 10px 0 0 0;
   }
   header .main-banner .banner .banner-text h1 {
-    text-align: start;
-    font-weight: 800;
+    line-height: 2rem;
+    font-size: 1rem;
     text-shadow: 0 0 2rem #000;
-  }
-  header .main-banner .banner .banner-logo {
-    display: none;
   }
 }
 @media (max-width: 480px) {
@@ -385,8 +371,12 @@ header .main-banner .banner .banner-logo img {
   header .main-banner {
     border-bottom: 0.4rem solid #3076aa;
   }
+  header .main-banner .banner .banner-text {
+    padding: 0;
+  }
   header .main-banner .banner .banner-text h1 {
-    font-size: 1rem;
+    line-height: 0.5rem;
+    font-size: 0.8rem;
     text-shadow: 0 2px 6px #F4FAFF;
   }
 }
@@ -510,7 +500,7 @@ header .main-banner .banner .banner-logo img {
 }
 @media (max-width: 480px) {
   .mission-sec .mission {
-    margin: 2rem 0;
+    margin: 0;
     padding: 1.5rem 1.5rem 1rem 1.5rem;
   }
   .mission-sec .mission .mission-title {
