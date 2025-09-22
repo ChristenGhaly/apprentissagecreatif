@@ -217,6 +217,7 @@ header .main-menu .burger-menu {
   opacity: 100%;
   padding: 20px 40px;
   overflow-y: hidden;
+  z-index: 10000;
 }
 header .main-menu .burger-menu button {
   all: unset;
@@ -224,7 +225,6 @@ header .main-menu .burger-menu button {
   opacity: 100%;
   border-radius: 5px;
   cursor: pointer;
-  z-index: 10000;
 }
 header .main-menu .burger-menu button i {
   border: 3px solid wheat;
@@ -430,112 +430,63 @@ header .main-banner .banner .banner-logo img {
   color: inherit;
 }
 
-.futur-publication {
-  background-image: url("../img/main-banner.webp");
-  background-size: cover;
-  background-position: left;
-  background-color: rgba(225, 225, 225, 0.8);
-  background-blend-mode: overlay;
-}
-.futur-publication .all-publication {
-  position: relative;
-}
-.futur-publication .all-publication .slick-arrow {
-  position: absolute;
-  top: 40%;
-  right: 90%;
-  height: 50px;
-  width: 50px;
-  border: 0.2rem solid #3076aa;
-  border-radius: 50px;
-  background-image: url("/assets/img/arrow.svg");
-  background-position: center;
-  background-size: cover;
-  color: transparent;
-  font-size: 0;
-  cursor: pointer;
-}
-.futur-publication .all-publication .slick-next {
-  left: 90%;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-.futur-publication .all-publication .slick-previous {
-  cursor: pointer;
-}
-.futur-publication .all-publication .slick-dots {
-  position: absolute;
-  top: 110%;
-  left: 41%;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-}
-.futur-publication .all-publication .slick-dots button {
-  all: unset;
-  height: 1rem;
-  width: 1rem;
-  background-color: #3076aa;
-  border-radius: 10px;
-  -webkit-box-shadow: 1px 1px 2px #999;
-          box-shadow: 1px 1px 2px #999;
-  font-size: 0;
-  cursor: pointer;
-}
-.futur-publication .all-publication .publication {
-  margin: 0 5rem;
-  padding: 3rem;
-  height: 250px;
-  border: 0.2rem solid #3076aa;
-  border-radius: 2rem;
-  background-color: #F4FAFF;
-  color: #8AA624;
+.laflammedalex-cover {
+  background-color: #FFF2EF;
   text-align: center;
 }
-.futur-publication .all-publication .publication i {
-  display: inline;
-  font-size: 4rem;
-  color: #556B2F;
+.laflammedalex-cover .order-now-btn {
+  margin-top: 4rem;
 }
-.futur-publication .all-publication .publication h4 {
-  margin-top: 2rem;
-  text-shadow: 0 0 10px #fff;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-.futur-publication .order-now-btn {
-  margin-top: 7rem;
-  text-align: center;
-}
-.futur-publication .order-now-btn a {
-  margin-top: 7rem;
+.laflammedalex-cover .order-now-btn a {
   text-decoration: none;
+  margin-top: 3rem;
   padding: 0.5rem 3rem;
   border: 0.1rem solid #F4FAFF;
   border-radius: 3rem;
   background-color: #9A3F3F;
   color: #F4FAFF;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
   cursor: pointer;
 }
-.futur-publication .order-now-btn a:hover {
+.laflammedalex-cover .order-now-btn a:hover {
   border: 0.1rem solid #9A3F3F;
   background-color: #F4FAFF;
   color: #9A3F3F;
 }
 @media (max-width: 992px) {
-  .futur-publication .order-now-btn a {
-    margin-top: 5rem;
+  .laflammedalex-cover .order-now-btn a {
+    margin-top: 1rem;
     padding: 0.4rem 2rem;
     border-radius: 2rem;
     font-size: 1rem;
   }
 }
+@media (max-width: 992px) {
+  .laflammedalex-cover .order-now-btn {
+    margin-top: 3rem;
+  }
+  .laflammedalex-cover .order-now-btn a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .laflammedalex-cover .cover-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .laflammedalex-cover .cover-flex div {
+    width: 100%;
+  }
+  .laflammedalex-cover .cover-flex div img {
+    height: 400px;
+    width: auto;
+  }
+}
 
-@media only screen and (max-width: 992px) {
+@media (max-width: 992px) {
   .mission-sec .mission {
     margin: 3rem 0;
     padding: 2rem 2rem 1rem 2rem;
@@ -544,36 +495,8 @@ header .main-banner .banner .banner-logo img {
   .mission-sec .mission .mission-title h2 {
     font-size: 2rem;
   }
-  .futur-publication .all-publication .slick-arrow {
-    height: 40px;
-    width: 40px;
-    border: 0.15rem solid #3076aa;
-    z-index: 5;
-  }
-  .futur-publication .all-publication .slick-dots {
-    top: 110%;
-    left: 39%;
-  }
-  .futur-publication .all-publication .slick-dots button {
-    height: 0.7rem;
-    width: 0.7rem;
-  }
-  .futur-publication .all-publication .publication {
-    margin: 0 3rem;
-    padding: 2rem;
-    height: 200px;
-    border: 0.15rem solid #3076aa;
-    border-radius: 1.5rem;
-  }
-  .futur-publication .all-publication .publication i {
-    font-size: 3rem;
-  }
-  .futur-publication .all-publication .publication h4 {
-    margin-top: 2rem;
-    font-size: 2rem;
-  }
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .mission-sec .mission {
     margin: 2rem 0;
     padding: 1.5rem 1.5rem 1rem 1.5rem;
@@ -584,35 +507,8 @@ header .main-banner .banner .banner-logo img {
   .mission-sec .mission .mission-title h2 {
     font-size: 1.7rem;
   }
-  .futur-publication .all-publication .slick-arrow {
-    top: 105%;
-    right: 50%;
-  }
-  .futur-publication .all-publication .slick-next {
-    left: 50%;
-  }
-  .futur-publication .all-publication .publication {
-    margin: 0 4rem;
-    padding: 1rem;
-    height: 170px;
-    border-radius: 1rem;
-  }
-  .futur-publication .all-publication .publication i {
-    font-size: 2.5rem;
-  }
-  .futur-publication .all-publication .publication h4 {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-  }
 }
-@media only screen and (max-width: 576px) {
-  .futur-publication .all-publication .publication {
-    margin: 0 1rem;
-    padding: 1rem 0.5rem;
-    border-radius: 0.5rem;
-  }
-}
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .mission-sec .mission {
     margin: 2rem 0;
     padding: 1.5rem 1.5rem 1rem 1.5rem;
@@ -625,19 +521,6 @@ header .main-banner .banner .banner-logo img {
   }
   .mission-sec .mission .mission-text p {
     font-size: 0.9rem;
-  }
-  .futur-publication .all-publication .publication {
-    margin: 0 1rem;
-    height: 150px;
-    padding: 1rem 0.5rem;
-    border-radius: 0.5rem;
-  }
-  .futur-publication .all-publication .publication i {
-    font-size: 1.5rem;
-  }
-  .futur-publication .all-publication .publication h4 {
-    margin-top: 1.5rem;
-    font-size: 1rem;
   }
 }
 @keyframes moveText {
@@ -798,32 +681,55 @@ section {
   background-color: #FFF2EF;
   text-align: center;
 }
-.laflammedalex-cover .audio-btn {
+.laflammedalex-cover .order-now-btn {
   margin-top: 4rem;
 }
-.laflammedalex-cover .audio-btn a {
-  margin-top: 7rem;
+.laflammedalex-cover .order-now-btn a {
   text-decoration: none;
+  margin-top: 3rem;
   padding: 0.5rem 3rem;
   border: 0.1rem solid #F4FAFF;
   border-radius: 3rem;
   background-color: #9A3F3F;
   color: #F4FAFF;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
   cursor: pointer;
 }
-.laflammedalex-cover .audio-btn a:hover {
+.laflammedalex-cover .order-now-btn a:hover {
   border: 0.1rem solid #9A3F3F;
   background-color: #F4FAFF;
   color: #9A3F3F;
 }
 @media (max-width: 992px) {
-  .laflammedalex-cover .audio-btn a {
-    margin-top: 5rem;
+  .laflammedalex-cover .order-now-btn a {
+    margin-top: 1rem;
     padding: 0.4rem 2rem;
     border-radius: 2rem;
     font-size: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  .laflammedalex-cover .order-now-btn {
+    margin-top: 3rem;
+  }
+  .laflammedalex-cover .order-now-btn a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .laflammedalex-cover .cover-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .laflammedalex-cover .cover-flex div {
+    width: 100%;
+  }
+  .laflammedalex-cover .cover-flex div img {
+    height: 400px;
+    width: auto;
   }
 }
 
@@ -898,15 +804,16 @@ section {
 .book-pages .fullscreen-btn button {
   margin-top: 3rem;
   padding: 0.5rem 3rem;
-  border: 0.2rem solid #F4FAFF;
+  border: 0.1rem solid #F4FAFF;
   border-radius: 3rem;
   background-color: #9A3F3F;
   color: #F4FAFF;
   font-size: 1.2rem;
+  text-transform: capitalize;
   cursor: pointer;
 }
 .book-pages .fullscreen-btn button:hover {
-  border: 0.2rem solid #9A3F3F;
+  border: 0.1rem solid #9A3F3F;
   background-color: #F4FAFF;
   color: #9A3F3F;
 }
@@ -914,12 +821,8 @@ section {
   .book-pages .fullscreen-btn button {
     margin-top: 1rem;
     padding: 0.4rem 2rem;
-    border: 0.1rem solid #F4FAFF;
     border-radius: 2rem;
     font-size: 1rem;
-  }
-  .book-pages .fullscreen-btn button:hover {
-    border: 0.1rem solid #9A3F3F;
   }
 }
 
@@ -1047,15 +950,16 @@ section {
 .order-request .order-form button {
   margin-top: 3rem;
   padding: 0.5rem 3rem;
-  border: 0.2rem solid #F4FAFF;
+  border: 0.1rem solid #F4FAFF;
   border-radius: 3rem;
   background-color: #9A3F3F;
   color: #F4FAFF;
   font-size: 1.2rem;
+  text-transform: capitalize;
   cursor: pointer;
 }
 .order-request .order-form button:hover {
-  border: 0.2rem solid #9A3F3F;
+  border: 0.1rem solid #9A3F3F;
   background-color: #F4FAFF;
   color: #9A3F3F;
 }
@@ -1063,12 +967,8 @@ section {
   .order-request .order-form button {
     margin-top: 1rem;
     padding: 0.4rem 2rem;
-    border: 0.1rem solid #F4FAFF;
     border-radius: 2rem;
     font-size: 1rem;
-  }
-  .order-request .order-form button:hover {
-    border: 0.1rem solid #9A3F3F;
   }
 }
 @media (max-width: 992px) {
@@ -1122,15 +1022,16 @@ iframe div textarea {
 iframe button {
   margin-top: 3rem;
   padding: 0.5rem 3rem;
-  border: 0.2rem solid #F4FAFF;
+  border: 0.1rem solid #F4FAFF;
   border-radius: 3rem;
   background-color: #9A3F3F;
   color: #F4FAFF;
   font-size: 1.2rem;
+  text-transform: capitalize;
   cursor: pointer;
 }
 iframe button:hover {
-  border: 0.2rem solid #9A3F3F;
+  border: 0.1rem solid #9A3F3F;
   background-color: #F4FAFF;
   color: #9A3F3F;
 }
@@ -1138,12 +1039,8 @@ iframe button:hover {
   iframe button {
     margin-top: 1rem;
     padding: 0.4rem 2rem;
-    border: 0.1rem solid #F4FAFF;
     border-radius: 2rem;
     font-size: 1rem;
-  }
-  iframe button:hover {
-    border: 0.1rem solid #9A3F3F;
   }
 }
 @media (max-width: 992px) {
@@ -1162,6 +1059,111 @@ iframe button:hover {
   }
 }
 
+.futur-publication {
+  background-image: url("../img/main-banner.webp");
+  background-size: cover;
+  background-position: left;
+  background-color: rgba(225, 225, 225, 0.8);
+  background-blend-mode: overlay;
+}
+.futur-publication .all-publication {
+  position: relative;
+}
+.futur-publication .all-publication .slick-arrow {
+  position: absolute;
+  top: 40%;
+  right: 90%;
+  height: 50px;
+  width: 50px;
+  border: 0.2rem solid #3076aa;
+  border-radius: 50px;
+  background-image: url("/assets/img/arrow.svg");
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+  font-size: 0;
+  cursor: pointer;
+}
+.futur-publication .all-publication .slick-next {
+  left: 90%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.futur-publication .all-publication .slick-previous {
+  cursor: pointer;
+}
+.futur-publication .all-publication .slick-dots {
+  position: absolute;
+  top: 110%;
+  left: 41%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.futur-publication .all-publication .slick-dots button {
+  all: unset;
+  height: 1rem;
+  width: 1rem;
+  background-color: #3076aa;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 2px #999;
+          box-shadow: 1px 1px 2px #999;
+  font-size: 0;
+  cursor: pointer;
+}
+.futur-publication .all-publication .publication {
+  margin: 0 5rem;
+  padding: 3rem;
+  height: 250px;
+  border: 0.2rem solid #3076aa;
+  border-radius: 2rem;
+  background-color: #F4FAFF;
+  color: #8AA624;
+  text-align: center;
+}
+.futur-publication .all-publication .publication i {
+  display: inline;
+  font-size: 4rem;
+  color: #556B2F;
+}
+.futur-publication .all-publication .publication h4 {
+  margin-top: 2rem;
+  text-shadow: 0 0 10px #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.futur-publication .order-now-btn {
+  margin-top: 7rem;
+  text-align: center;
+}
+.futur-publication .order-now-btn a {
+  text-decoration: none;
+  margin-top: 3rem;
+  padding: 0.5rem 3rem;
+  border: 0.1rem solid #F4FAFF;
+  border-radius: 3rem;
+  background-color: #9A3F3F;
+  color: #F4FAFF;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.futur-publication .order-now-btn a:hover {
+  border: 0.1rem solid #9A3F3F;
+  background-color: #F4FAFF;
+  color: #9A3F3F;
+}
+@media (max-width: 992px) {
+  .futur-publication .order-now-btn a {
+    margin-top: 1rem;
+    padding: 0.4rem 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .book-pages .fullscreen-btn button {
     display: none;
@@ -1174,12 +1176,6 @@ iframe button:hover {
   .laflammedalex-description .description h2 {
     margin-bottom: 1.5rem;
     font-size: 2.1rem;
-  }
-  .laflammedalex-cover .audio-btn {
-    margin-top: 3rem;
-  }
-  .laflammedalex-cover .audio-btn a {
-    font-size: 1rem;
   }
   .book-pages .container {
     max-width: 600px;
@@ -1210,6 +1206,56 @@ iframe button:hover {
     margin-bottom: 1.5rem;
     font-size: 2.1rem;
   }
+  .futur-publication .all-publication .slick-arrow {
+    height: 40px;
+    width: 40px;
+    border: 0.15rem solid #3076aa;
+    z-index: 5;
+  }
+  .futur-publication .all-publication .slick-dots {
+    top: 110%;
+    left: 39%;
+  }
+  .futur-publication .all-publication .slick-dots button {
+    height: 0.7rem;
+    width: 0.7rem;
+  }
+  .futur-publication .all-publication .publication {
+    margin: 0 3rem;
+    padding: 2rem;
+    height: 200px;
+    border: 0.15rem solid #3076aa;
+    border-radius: 1.5rem;
+  }
+  .futur-publication .all-publication .publication i {
+    font-size: 3rem;
+  }
+  .futur-publication .all-publication .publication h4 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .futur-publication .all-publication .slick-arrow {
+    top: 105%;
+    right: 50%;
+  }
+  .futur-publication .all-publication .slick-next {
+    left: 50%;
+  }
+  .futur-publication .all-publication .publication {
+    margin: 0 4rem;
+    padding: 1rem;
+    height: 170px;
+    border-radius: 1rem;
+  }
+  .futur-publication .all-publication .publication i {
+    font-size: 2.5rem;
+  }
+  .futur-publication .all-publication .publication h4 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 576px) {
   .laflammedalex-description .description {
@@ -1221,19 +1267,6 @@ iframe button:hover {
   }
   .laflammedalex-description .description p {
     font-size: 1rem;
-  }
-  .laflammedalex-cover .cover-flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .laflammedalex-cover .cover-flex div {
-    width: 100%;
-  }
-  .laflammedalex-cover .cover-flex div img {
-    height: 400px;
-    width: auto;
   }
   .book-pages .laflammedalex-pages {
     border-radius: 10px;
@@ -1255,6 +1288,26 @@ iframe button:hover {
   .order-request h3 {
     margin-bottom: 1.5rem;
     font-size: 1.7rem;
+  }
+  .futur-publication .all-publication .publication {
+    margin: 0 1rem;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .futur-publication .all-publication .publication {
+    margin: 0 1rem;
+    height: 150px;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .futur-publication .all-publication .publication i {
+    font-size: 1.5rem;
+  }
+  .futur-publication .all-publication .publication h4 {
+    margin-top: 1.5rem;
+    font-size: 1rem;
   }
 }
 @keyframes moveText {
@@ -1310,14 +1363,14 @@ iframe button:hover {
   text-align: center;
 }
 .audio-sec .return-btn a {
-  margin-top: 7rem;
   text-decoration: none;
+  margin-top: 3rem;
   padding: 0.5rem 3rem;
   border: 0.1rem solid #F4FAFF;
   border-radius: 3rem;
   background-color: #9A3F3F;
   color: #F4FAFF;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
   cursor: pointer;
   text-transform: none;
@@ -1329,7 +1382,7 @@ iframe button:hover {
 }
 @media (max-width: 992px) {
   .audio-sec .return-btn a {
-    margin-top: 5rem;
+    margin-top: 1rem;
     padding: 0.4rem 2rem;
     border-radius: 2rem;
     font-size: 1rem;
@@ -1476,15 +1529,16 @@ iframe button:hover {
 .contact-info .contact-form button {
   margin-top: 3rem;
   padding: 0.5rem 3rem;
-  border: 0.2rem solid #F4FAFF;
+  border: 0.1rem solid #F4FAFF;
   border-radius: 3rem;
   background-color: #9A3F3F;
   color: #F4FAFF;
   font-size: 1.2rem;
+  text-transform: capitalize;
   cursor: pointer;
 }
 .contact-info .contact-form button:hover {
-  border: 0.2rem solid #9A3F3F;
+  border: 0.1rem solid #9A3F3F;
   background-color: #F4FAFF;
   color: #9A3F3F;
 }
@@ -1492,12 +1546,8 @@ iframe button:hover {
   .contact-info .contact-form button {
     margin-top: 1rem;
     padding: 0.4rem 2rem;
-    border: 0.1rem solid #F4FAFF;
     border-radius: 2rem;
     font-size: 1rem;
-  }
-  .contact-info .contact-form button:hover {
-    border: 0.1rem solid #9A3F3F;
   }
 }
 @media (max-width: 992px) {

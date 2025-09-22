@@ -38,96 +38,11 @@
     
 }
 
-.futur-publication{
-    @include bg-img-style($main-bannerimg);
-    background-color: rgba(225,225,225,80%);
-    background-blend-mode: overlay;
-
-    .all-publication{
-        position: relative;
-
-        .slick-arrow{
-            position: absolute;
-            top: 40%;
-            right: 90%;
-            height: 50px;
-            width: 50px;
-            border: 0.2rem solid $menu-color;
-            border-radius: 50px;
-            background-image: url("/assets/img/arrow.svg");
-            background-position: center;
-            background-size: cover;
-            color: transparent;
-            font-size: 0;
-            cursor: pointer;
-        }
-
-        .slick-next{
-            left: 90%;
-            transform: rotate(180deg);
-        }
-
-        .slick-previous{
-            cursor: pointer;
-        }
-
-        .slick-dots{
-            position: absolute;
-            top: 110%;
-            left: 41%;
-            list-style: none;
-            display: flex;
-            gap: 10px;
-
-            button{
-                all: unset;
-                height: 1rem;
-                width: 1rem;
-                background-color: $menu-color;
-                border-radius: 10px;
-                box-shadow: 1px 1px 2px #999;
-                font-size: 0;
-                cursor: pointer;
-            }
-        }
-
-        .publication{
-            margin: 0 5rem;
-            padding: 3rem;
-            height: 250px;
-            border: 0.2rem solid $menu-color;
-            border-radius: 2rem;
-            background-color: $light-textcolor;
-            color: $main-color;
-            text-align: center;
-            
-            i{
-                display: inline;
-                font-size: 4rem;
-                color: #556B2F;
-            }
-            
-            h4{
-                margin-top: 2rem;
-                text-shadow: 0 0 10px #fff;
-                font-size: 2.5rem;
-                font-weight: 700;
-            }
-        }
-    }
-
-    .order-now-btn{
-        margin-top: 7rem;
-        text-align: center;
-
-        a{
-            @include a-as-btn-style;
-        }
-    }
-        
+.laflammedalex-cover{
+    @include coverpages-sec-style;
 }
 
-@media only screen and (max-width: $large-size){
+@media (max-width: $large-size){
     .mission-sec{
         .mission{
             margin: 3rem 0;
@@ -143,50 +58,9 @@
         }
         
     }
-
-    .futur-publication{
-
-        .all-publication{
-
-            .slick-arrow{
-                height: 40px;
-                width: 40px;
-                border: 0.15rem solid $menu-color;
-                z-index: 5;
-            }
-
-            .slick-dots{
-                top: 110%;
-                left: 39%;
-
-                button{
-                    height: 0.7rem;
-                    width: 0.7rem;
-                }
-            }
-
-            .publication{
-                margin: 0 3rem;
-                padding: 2rem;
-                height: 200px;
-                border: 0.15rem solid $menu-color;
-                border-radius: 1.5rem;
-                
-                i{
-                    font-size: 3rem;
-                }
-                
-                h4{
-                    margin-top: 2rem;
-                    font-size: 2rem;
-                }
-            }
-        }
-            
-    }
 }
 
-@media only screen and (max-width: $medium-size){
+@media (max-width: $medium-size){
     .mission-sec{
         .mission{
             margin: 2rem 0;
@@ -201,54 +75,9 @@
         }
         
     }
-
-    .futur-publication{
-
-        .all-publication{
-
-            .slick-arrow{
-                top: 105%;
-                right: 50%;
-            }
-
-            .slick-next{
-                left: 50%;
-            }
-
-            .publication{
-                margin: 0 4rem;
-                padding: 1rem;
-                height: 170px;
-                border-radius: 1rem;
-                
-                i{
-                    font-size: 2.5rem;
-                }
-                
-                h4{
-                    margin-top: 2rem;
-                    font-size: 1.5rem;
-                }
-            }
-        }   
-    }
 }
 
-@media only screen and (max-width: $small-size){
-    .futur-publication{
-
-        .all-publication{
-
-            .publication{
-                margin: 0 1rem;
-                padding: 1rem 0.5rem;
-                border-radius: 0.5rem;
-            }
-        }   
-    }
-}
-
-@media only screen and (max-width: $phone-size){
+@media (max-width: $phone-size){
     .mission-sec{
         .mission{
             margin: 2rem 0;
@@ -269,27 +98,5 @@
             }
         }
         
-    }
-
-    .futur-publication{
-
-        .all-publication{
-
-            .publication{
-                margin: 0 1rem;
-                height: 150px;
-                padding: 1rem 0.5rem;
-                border-radius: 0.5rem;
-
-                i{
-                    font-size: 1.5rem;
-                }
-                
-                h4{
-                    margin-top: 1.5rem;
-                    font-size: 1rem;
-                }
-            }
-        }   
     }
 }

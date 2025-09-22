@@ -24,6 +24,12 @@ $book-bg-light-color: #FFF2EF;
 $main-bannerimg: url("../img/main-banner.webp");
 $logo-img: url("../img/logo.png");
 
+// Screen Sizes
+$phone-size: 480px;
+$small-size: 576px;
+$medium-size: 768px;
+$large-size: 992px;
+
 // background style
 @mixin bg-img-style($img-name){
     background-image: $img-name;
@@ -41,6 +47,40 @@ $right-to-left-text: moveText 15s linear infinite;
     100% {
         // left: -90%;
         transform: translateX(-30%);
+    }
+}
+
+@mixin coverpages-sec-style() {
+    background-color: $book-bg-light-color;
+    text-align: center;
+
+    .order-now-btn{
+        margin-top: 4rem;
+        a{
+            @include a-as-btn-style;
+        }
+    }
+
+    @media (max-width: $large-size){
+        .order-now-btn{
+            margin-top: 3rem;
+            a{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @media (max-width: $small-size){
+        .cover-flex{
+            flex-direction: column;
+            div{
+                width: 100%;
+                img{
+                    height: 400px;
+                    width: auto;
+                }
+            }
+        } 
     }
 }
 
@@ -80,7 +120,7 @@ $right-to-left-text: moveText 15s linear infinite;
     }
 
     button{
-        @include order-btn-style;
+        @include btn-style;
     }
 
     @media (max-width: $large-size){
@@ -101,50 +141,14 @@ $right-to-left-text: moveText 15s linear infinite;
 	}
 }
 
-// Screen Sizes
-$phone-size: 480px;
-$small-size: 576px;
-$medium-size: 768px;
-$large-size: 992px;
-
-@mixin order-btn-style{
+@mixin btn-style{
     margin-top: 3rem;
-    padding: 0.5rem 3rem;
-    border: 0.2rem solid $light-textcolor;
-    border-radius: 3rem;
-    background-color: $red-color;
-    color: $light-textcolor;
-    font-size: 1.2rem;
-    cursor: pointer;
-
-    &:hover{
-        border: 0.2rem solid $red-color;
-        background-color: $light-textcolor;
-        color: $red-color;
-    }
-
-    @media (max-width: $large-size){
-		margin-top: 1rem;
-        padding: 0.4rem 2rem;
-        border: 0.1rem solid $light-textcolor;
-        border-radius: 2rem;
-        font-size: 1rem;
-
-        &:hover{
-            border: 0.1rem solid $red-color;
-        }
-	}
-}
-
-@mixin a-as-btn-style{
-    margin-top: 7rem;
-    text-decoration: none;
     padding: 0.5rem 3rem;
     border: 0.1rem solid $light-textcolor;
     border-radius: 3rem;
     background-color: $red-color;
     color: $light-textcolor;
-    font-size: $nav-textsize;
+    font-size: 1.2rem;
     text-transform: capitalize;
     cursor: pointer;
 
@@ -155,9 +159,14 @@ $large-size: 992px;
     }
 
     @media (max-width: $large-size){
-        margin-top: 5rem;
+		margin-top: 1rem;
         padding: 0.4rem 2rem;
         border-radius: 2rem;
         font-size: 1rem;
-    }
+	}
+}
+
+@mixin a-as-btn-style{
+    text-decoration: none;
+    @include btn-style;
 }
