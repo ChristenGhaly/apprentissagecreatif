@@ -148,7 +148,7 @@ header .main-menu img {
 header .main-menu ul {
   list-style: none;
 }
-header .main-menu .logo-flex {
+header .main-menu .menu-flex {
   position: fixed;
   top: 0;
   left: 0;
@@ -169,42 +169,47 @@ header .main-menu .logo-flex {
   font-size: 1.3rem;
   background-color: #3076aa;
 }
-header .main-menu .logo-flex .nav-link {
+header .main-menu .menu-flex .nav-link {
   background-color: #3076aa;
   color: #F4FAFF;
 }
-header .main-menu .logo-flex .nav-link:hover {
+header .main-menu .menu-flex .nav-link:hover {
   color: #BBDCE5;
 }
-header .main-menu .logo-flex .nav-menu {
+header .main-menu .menu-flex .nav-menu {
   background-color: #3076aa;
 }
-header .main-menu .logo-flex .nav-menu .dropdown-item {
+header .main-menu .menu-flex .nav-menu .dropdown-item {
+  padding: 0;
   background-color: #3076aa;
 }
-header .main-menu .logo-flex .nav-menu .dropdown-item:hover {
+header .main-menu .menu-flex .nav-menu .dropdown-item:hover {
   background-color: #BBDCE5;
 }
-header .main-menu .logo-flex .left {
+header .main-menu .menu-flex .left {
   width: 50%;
 }
-header .main-menu .burger-btn {
+header .main-menu .burger-btn, header .main-menu .burger-close-btn {
   display: none;
 }
-header .main-menu .burger-btn button {
+header .main-menu .burger-btn button, header .main-menu .burger-close-btn button {
   all: unset;
-  padding: 5px 10px;
+  padding: 0.1rem 0.6rem;
   border: 0.1rem solid #F4FAFF;
   border-radius: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #F4FAFF;
   cursor: pointer;
 }
-header .main-menu .burger-btn button i {
+header .main-menu .burger-btn button i, header .main-menu .burger-close-btn button i {
   margin: 0;
 }
-header .main-menu .burger-btn button:hover {
+header .main-menu .burger-btn button:hover, header .main-menu .burger-close-btn button:hover {
   color: #BBDCE5;
+}
+header .main-menu .burger-close-btn button {
+  background-color: #9A3F3F;
+  color: #F4FAFF;
 }
 header .main-menu .burger-menu {
   display: none;
@@ -218,20 +223,6 @@ header .main-menu .burger-menu {
   padding: 20px 40px;
   overflow-y: hidden;
   z-index: 10000;
-}
-header .main-menu .burger-menu button {
-  all: unset;
-  margin-left: 95%;
-  opacity: 100%;
-  border-radius: 5px;
-  cursor: pointer;
-}
-header .main-menu .burger-menu button i {
-  border: 3px solid wheat;
-  border-radius: 2rem;
-  background-color: wheat;
-  font-size: 2.5rem;
-  color: #8E1616;
 }
 header .main-menu .burger-menu .logo-text a {
   text-decoration: none;
@@ -293,7 +284,7 @@ header .main-banner .banner .banner-text h1 {
 }
 
 @media (max-width: 1100px) {
-  header .main-menu .logo-flex {
+  header .main-menu .menu-flex {
     padding: 0 1rem;
     font-size: 1.1rem;
   }
@@ -307,10 +298,10 @@ header .main-banner .banner .banner-text h1 {
   }
 }
 @media (max-width: 992px) {
-  header .main-menu .logo-flex {
+  header .main-menu .menu-flex {
     padding: 0;
   }
-  header .main-menu .logo-flex .left {
+  header .main-menu .menu-flex .left {
     width: 60%;
   }
   header .main-banner {
@@ -324,7 +315,7 @@ header .main-banner .banner .banner-text h1 {
   }
 }
 @media (max-width: 768px) {
-  header .main-menu .logo-flex {
+  header .main-menu .menu-flex {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -332,17 +323,17 @@ header .main-banner .banner .banner-text h1 {
         -ms-flex-align: center;
             align-items: center;
   }
-  header .main-menu .logo-flex .nav-item {
+  header .main-menu .menu-flex .nav-item {
     display: none;
   }
-  header .main-menu .logo-flex .right {
+  header .main-menu .menu-flex .right {
     display: none;
   }
   header .main-menu .burger-btn {
     display: block;
   }
   header .main-banner {
-    padding: 50px 0 70px 0;
+    padding: 50px 0 90px 0;
     border-bottom: 0.7rem solid #3076aa;
   }
   header .main-banner .banner .banner-text h1 {
@@ -352,15 +343,13 @@ header .main-banner .banner .banner-text h1 {
   }
 }
 @media (max-width: 576px) {
-  header .main-banner {
-    background-position: center;
-  }
   header .main-banner .banner .banner-text {
     padding: 10px 0 0 0;
   }
   header .main-banner .banner .banner-text h1 {
     line-height: 2rem;
     font-size: 1rem;
+    font-weight: 700;
     text-shadow: 0 0 2rem #000;
   }
 }
@@ -372,7 +361,7 @@ header .main-banner .banner .banner-text h1 {
     border-bottom: 0.4rem solid #3076aa;
   }
   header .main-banner .banner .banner-text {
-    padding: 0;
+    padding: 10px 0;
   }
   header .main-banner .banner .banner-text h1 {
     line-height: 0.5rem;

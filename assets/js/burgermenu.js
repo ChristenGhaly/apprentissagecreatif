@@ -9,6 +9,7 @@ export function setupBurgerMenu(){
 
     function openBurgerMenu() {
         // burger_menu.classList.add("open");
+        burger_close_btn.style.display = "block";
         burger_menu.style.display = "block";
         burger_btn.style.display = "none";
         body.style.overflowY = "hidden";
@@ -16,6 +17,7 @@ export function setupBurgerMenu(){
     
     function closeBurgerMenu() {
         // burger_menu.classList.remove("open");
+        burger_close_btn.style.display = "none";
         burger_menu.style.display = "none";
         burger_btn.style.display = "block";
         body.style.overflowY = "visible";

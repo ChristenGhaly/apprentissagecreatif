@@ -16,7 +16,7 @@ header{
             list-style: none;
         }
         
-        .logo-flex{
+        .menu-flex{
             position: fixed;
             top: 0;
             left: 0;
@@ -42,8 +42,9 @@ header{
 
             .nav-menu{
                 background-color: $menu-color;
-
+                
                 .dropdown-item{
+                    padding: 0;
                     background-color: $menu-color;
 
                     &:hover{
@@ -57,15 +58,15 @@ header{
             }
         }
 
-        .burger-btn{
+        .burger-btn, .burger-close-btn{
             display: none;
 
             button{
                 all: unset;
-                padding: 5px 10px;
+                padding: 0.1rem 0.6rem;
                 border: 0.1rem solid $light-textcolor;
                 border-radius: 0.5rem;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 color: $light-textcolor;
                 cursor: pointer;
 
@@ -76,6 +77,14 @@ header{
                 &:hover{
                     color: $hover-color;
                 }
+            }
+        }
+
+        .burger-close-btn{
+
+            button{
+                background-color: $red-color;
+                color: $light-textcolor;
             }
         }
 
@@ -93,22 +102,6 @@ header{
             z-index: 10000;
             // transform: translateX(100%);
             // transition: transform 0.3s ease-in-out;
-
-            button{
-                all: unset;
-                margin-left: 95%;
-                opacity: 100%;
-                border-radius: 5px;
-                cursor: pointer;
-                
-                i{
-                    border: 3px solid wheat;
-                    border-radius: 2rem;
-                    background-color: wheat;
-                    font-size: 2.5rem;
-                    color: #8E1616;
-                }
-            }
 
             .logo-text{
                 a{
@@ -190,9 +183,7 @@ header{
 @media (max-width: 1100px){
     header{
         .main-menu{
-
-            
-            .logo-flex{
+            .menu-flex{
                 padding: 0 1rem;
                 font-size: 1.1rem;
             }
@@ -218,7 +209,7 @@ header{
     header{
         .main-menu{
 
-            .logo-flex{
+            .menu-flex{
                 padding: 0;
 
                 .left{
@@ -248,7 +239,7 @@ header{
     header{
         .main-menu{
 
-            .logo-flex{
+            .menu-flex{
                 justify-content: space-between;
                 align-items: center;
                 .nav-item{
@@ -266,7 +257,7 @@ header{
         }
 
         .main-banner{
-            padding: 50px 0 70px 0;
+            padding: 50px 0 90px 0;
             border-bottom: 0.7rem solid $menu-color;
 
             .banner{
@@ -285,7 +276,7 @@ header{
 @media (max-width: $small-size){
     header{
         .main-banner{
-            background-position: center;
+
             .banner{
                 
                 .banner-text{
@@ -293,6 +284,7 @@ header{
                     h1{
                         line-height: 2rem;
                         font-size: 1rem;
+                        font-weight: 700;
                         text-shadow: 0 0 2rem #000;
                     }
                 }
@@ -318,7 +310,7 @@ header{
 
             .banner{
                 .banner-text{ 
-                    padding: 0;
+                    padding: 10px 0;
                     h1{
                         line-height: 0.5rem;
                         font-size: 0.8rem;
