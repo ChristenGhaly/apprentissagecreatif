@@ -89,7 +89,6 @@ header{
             background-color: $menu-color;
             opacity: 100%;
             padding: 20px 40px;
-            z-index: 10000;
             overflow-y: hidden;
             // transform: translateX(100%);
             // transition: transform 0.3s ease-in-out;
@@ -97,10 +96,10 @@ header{
             button{
                 all: unset;
                 margin-left: 95%;
-                margin-top: -20rem;
                 opacity: 100%;
                 border-radius: 5px;
                 cursor: pointer;
+                z-index: 10000;
                 
                 i{
                     border: 3px solid wheat;
@@ -116,6 +115,7 @@ header{
                     text-decoration: none;
                     font-family: $header-font;
                     font-weight: 500;
+                    line-height: 3rem;
                     
                     p{
                         color: $light-textcolor;

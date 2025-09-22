@@ -216,16 +216,15 @@ header .main-menu .burger-menu {
   background-color: #3076aa;
   opacity: 100%;
   padding: 20px 40px;
-  z-index: 10000;
   overflow-y: hidden;
 }
 header .main-menu .burger-menu button {
   all: unset;
   margin-left: 95%;
-  margin-top: -20rem;
   opacity: 100%;
   border-radius: 5px;
   cursor: pointer;
+  z-index: 10000;
 }
 header .main-menu .burger-menu button i {
   border: 3px solid wheat;
@@ -238,6 +237,7 @@ header .main-menu .burger-menu .logo-text a {
   text-decoration: none;
   font-family: "Zapfino", sans-serif;
   font-weight: 500;
+  line-height: 3rem;
 }
 header .main-menu .burger-menu .logo-text a p {
   color: #F4FAFF;
