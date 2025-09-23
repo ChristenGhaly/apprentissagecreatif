@@ -3,6 +3,7 @@ import { preventCopyImages } from './protectimages.js';
 import { fullscreenDisplay } from './fullscreen.js';
 import { initFlipbook } from './flipbook.js';
 import { setupBurgerMenu } from './burgermenu.js';
+import { switchLanguage } from './switchlang.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     await Promise.all([
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         loadPartial('/partials/footer.html', 'footer')
     ]);
 
-    // setupBurgerMenu("burger-btn-id", "burger-menu-id", "burger-close-btn-id");
+    switchLanguage();
     setupBurgerMenu();
     preventCopyImages();
     fullscreenDisplay();
@@ -84,14 +85,3 @@ $('.laflammedalex-pages').slick({
         }
     ]
 });
-
-
-document.getElementById('prevBtn').addEventListener('click', function() {
-    $('.flipbook').turn('previous');
-});
-
-document.getElementById('nextBtn').addEventListener('click', function() {
-    $('.flipbook').turn('next');
-});
-
-

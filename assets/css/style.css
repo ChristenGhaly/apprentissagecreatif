@@ -180,7 +180,6 @@ header .main-menu .menu-flex .nav-menu {
   background-color: #3076aa;
 }
 header .main-menu .menu-flex .nav-menu .dropdown-item {
-  padding: 0;
   background-color: #3076aa;
 }
 header .main-menu .menu-flex .nav-menu .dropdown-item:hover {
@@ -242,6 +241,8 @@ header .main-menu .burger-menu ul .dropdown {
   color: #F4FAFF;
 }
 header .main-menu .burger-menu ul .dropdown .nav-menu {
+  margin: 0;
+  padding: 0;
   background-color: #3076aa;
 }
 header .main-menu .burger-menu ul .dropdown .nav-menu .dropdown-item {
@@ -265,6 +266,18 @@ header .main-menu .burger-menu ul span {
 header .main-menu .burger-menu.active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+header .open body {
+  overflow-y: hidden;
+}
+header .open .burger-btn {
+  display: none;
+}
+header .open .burger-menu {
+  display: "block";
+}
+header .open .burger-close-btn {
+  display: "block";
 }
 header .main-banner {
   background-image: url("../img/main-banner.webp");

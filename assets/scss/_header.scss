@@ -44,7 +44,6 @@ header{
                 background-color: $menu-color;
                 
                 .dropdown-item{
-                    padding: 0;
                     background-color: $menu-color;
 
                     &:hover{
@@ -123,8 +122,10 @@ header{
 
                 .dropdown{
                     color: $light-textcolor;
-
+                    
                     .nav-menu{
+                        margin: 0;
+                        padding: 0;
                         background-color: $menu-color;
 
                         .dropdown-item{
@@ -156,6 +157,24 @@ header{
             &.active{
                 transform: translateX(0);
             }
+        }
+    }
+
+    .open{
+        body{
+            overflow-y: hidden;
+        }
+
+        .burger-btn{
+            display: none;
+        }
+
+        .burger-menu{
+            display: "block";
+        }
+
+        .burger-close-btn{
+            display: "block";
         }
     }
 
